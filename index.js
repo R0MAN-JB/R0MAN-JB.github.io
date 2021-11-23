@@ -1,7 +1,7 @@
 const yesBtn = document.querySelector('#yesBtn');
 
 yesBtn.addEventListener('click',function () {
-    alert('Sabia que tomarias la mejor decicion tkm :3');
+    alert('Sabia que tomarias la mejor decicion tqm :3');
 });
 
 const noBtn = document.querySelector('#noBtn');
