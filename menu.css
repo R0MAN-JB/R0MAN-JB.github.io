@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+
+:root {
+  --background: #e0e5ec;
+  --gray: #797d7f;
+}
+
+*,
+*::before,
+*::after {
+                box-sizing: border-box;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                width: 100vw;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                font-family: Ubuntu, sans-serif;
+                background-color: var(--background);
+            }
+
+            .card {
+                width: 450px;
+                height: auto;
+                padding: 15px;
+                border: none;
+                border-radius:15px;
+                box-shadow: 0px 12px 20px 9px #b9c0d3;
+            }
+
+            .card__header {
+                display: flex;
+                /* align-items: center; */
+                justify-content: space-between;
+                margin: 15px;
+            }
+
+            .card__top--bold {
+                font-weight: bold;
+            }
+
+            .card__header {
+                display: flex;
+                justify-content: space-evenly;
+                text-align: right;
+                /* align-items: center;
+                align-content: left; */
+            }
+
+            .module__container {
+                display: grid;
+                grid-template: 1fr / 1fr;
+                grid-gap: 10px;
+            }
+
+            .card__module {
+                text-align: center;
+                padding: 20px;
+                border: none;
+                border-radius:15px;
+                box-shadow: 0px 2px 20px 9px #bcc2d1;
+                cursor: pointer 
+            }
+
+          .card__module:hover {
+                 box-shadow: 0px 2px 20px 2px #868686;
+            }
+           body {
+              margin: 0;
+              font-family: "Raleway", sans-serif;
+           }
+
+           img {
+              max-width: 100%;
+           }
+
+           .container {
+              background-color: var(--background);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              min-height: 50vh;
+           }
+
+
+           .player__img {
+              border-radius: 50%;
+              box-shadow: 2px 2px 7px rgb(163, 177, 198), -2px -2px 7px rgb(163, 177, 198),
+                -8px -8px 50px rgba(255, 255, 255, 0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);
+           }
+
+           .text__color {
+            font-weight: 0 ;
+            opacity: 0.7;  
+          }
+
+          .icon__color{
+              text-shadow: #7c7c7c;
+              opacity: 0.8;
+          }
+    
+          section a { 
+              text-decoration: none;
+              color: #000;
+              opacity: 0.7;
+              
+          }
+          a:visited {
+          text-decoration: none;
+          }
+        
