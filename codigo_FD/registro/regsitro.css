@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2e2d35;
+}
+.leaderboard {
+  max-width: 100vw;
+  margin: auto auto;
+  /*   border-radius: 1rem; */
+  /*   box-shadow: 2px 2px 16px 1px #aaa; */
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background: linear-gradient(to bottom, #f1804c, #f04729);
+  color: white;
+  text-transform: uppercase;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  height: 17rem;
+  position: relative;
+}
+
+h1 {
+  font-family: 'B612', sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  position: absolute;
+  margin-left: 1.5rem;
+  top: 3rem;
+  z-index: 1;
+}
+
+img {
+  height: 17rem;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  opacity: 0.6;
+}
+
+table {
+  background-color: #2e2d35;
+  color: #999;
+  width: 100%;
+  border-collapse: collapse;
+  /*   border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem; */
+  overflow: hidden;
+}
+
+thead {
+  font-size: 0.8rem;
+  color: #b6b6b6;
+  text-transform: uppercase;
+}
+
+tbody .nick {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+tbody .sp {
+  color: white;
+  font-weight: bold;
+}
+tbody tr:nth-child(2n) {
+  background: #525158c7;
+}
+
+.nick {
+  text-align: left;
+}
+
+.rank,
+.sp,
+.kd {
+  text-align: right;
+}
+
+.rank {
+  width: 2ch;
+  padding-left: 0.8rem;
+}
+
+.sp,
+.kd {
+  width: 5ch;
+}
+
+th {
+  padding: 1.5rem 0.8rem 0.5rem;
+}
+
+td {
+  padding: 1rem 0.8rem;
+}
+
+/* #1f232c */
