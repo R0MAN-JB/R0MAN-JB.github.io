@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="style-slider.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <title>libol</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div> LIBOL comunidad de lectores </div>
+        </div>
+    </header>
+
+    <div class="books-slider" id="populares" data-flickity= '{ "autoPlay": 1600, "contain": true, "pageDots": false, "wrapAround": true }'>
+    <!-- <div class="books-slider"> -->
+        <div class="books-cell">
+            <div class="book_img"> 
+                <img src="https://i.ibb.co/HFhHrh1/nosotros-en-la-luna.jpg" class=""> 
+            </div>
+            <div class="book_contents">
+                <br>
+                <h2>Nosotros en la...</h2>
+                <h4>Alice Kellen</h4>
+                <p>Una noche en París. Dos caminos entrelazándose. No hay nada más eterno que un encuentro fugaz.</p>
+                <button><a href="https://telegra.ph/Nosotros-en-la-luna-09-03-132" class="book_button"> leer libro</a></button>
+            </div>
+        </div>
+        <div class="books-cell">
+            <div class="book_img"> 
+                <img src="https://i.ibb.co/1JzLm4m/Rojo-blanco-y-sangre-azul.jpg" class=""> 
+            </div>
+            <div class="book_contents">
+                <br>
+                <h2>Rojo, blanco y s...</h2>
+                <h4>Casey McQuiston</h4>
+                <p>El verdadero amor no siempre es diplomático Alex Clarademont-Díaz, el hijo milenial de la presidenta de los Estados Unidos, es un tesoro para el marketing de la Casa Blanca: atractivo, carismático e inteligente.</p>
+                <button><a href="https://telegra.ph/Rojo-blanco-y-sangre-azul-05-27-31" class="book_button" target="_blank"> leer libro</a></button>
+            </div>
+        </div>
+        <div class="books-cell">
+            <div class="book_img"> 
+                <img src="https://i.ibb.co/Nt109k4/Todo-lo-que-nunca-fuimos.jpg" class=""> 
+            </div>
+            <div class="book_contents">
+                <br>
+                <h2>Todo lo que nunc...</h2>
+                <h4>Alice Kellen</h4>
+                <p> Leah es un espejismo desde el accidente que se llevó a sus padres. Axel es el mejor amigo de su hermano mayor y, cuando accede a acogerla en su casa durante unos meses,</p>
+                <button><a href="https://telegra.ph/Todo-lo-que-nunca-fuimos-09-03-127" class="book_button" target="_blank"> leer libro</a></button>
+            </div>
+        </div>
+        <div class="books-cell">
+            <div class="book_img"> 
+                <img src="https://i.ibb.co/Jpkkc4z/La-canci-n-del-lobo.jpg" class=""> 
+            </div>
+            <div class="book_contents">
+                <br>
+                <h2>La canción del l...</h2>
+                <h4>T. J. Klune</h4>
+                <p>Ox era un niño cuando su padre le enseñó que nunca sería nadie. Y lo creyó por mucho tiempo.Hasta que se encontró a Joe al final de un camino. Un chico extraño y explosivo, dispuesto a brindarle todo</p>
+                <button><a href="https://telegra.ph/Wolfsong-La-canción-del-lobo-11-15-44" class="book_button"> leer libro</a></button>
+            </div>
+        </div>
+    </div>
+
+    <br> 
+    <div class="nav_cont">
+        <div class="nav_sup">
+        <ul>
+            <li class="list">
+                <a href="#categorias">
+                    <span class="icon_nav"> <ion-icon name="grid-outline"></ion-icon> </span>
+                    <br>
+                    <span class="text_nav"> categorias </span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#nuevos">
+                    <span class="icon_nav"> <ion-icon name="pricetag-outline"></ion-icon> </span>
+                    <span class="text_nav"> nuevos </span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#pedidos">
+                    <span class="icon_nav"> <ion-icon name="create-outline"></ion-icon> </span>
+                    <span class="text_nav"> pedidos </span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#populares">
+                    <span class="icon_nav"> <ion-icon name="heart-outline"></ion-icon> </span>
+                    <span class="text_nav"> populares </span>
+                </a>
+            </li>
+            <!-- <li class="list">
+                <a href="#">
+                    <span class="icon_nav"> <ion-icon name="home-outline"></ion-icon> </span>
+                    <span class="text_nav"> biblioteca </span>
+                </a>
+            </li> -->
+        </ul>
+    </div>
+    </div>
+    <br>
+
+    <div class="books-carousel-cont" id="nuevos">
+        <div class="books-carousel-header" >
+            <h4>Nuevos</h4>
+            <div class="medio"> </div>
+            <h5> <a href="">ver más <i class="fas fa-angle-right"></i></a> </h5>
+        </div>
+        <div class="books-carousel" data-flickity= '{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false, "groupCells": "85%", "wrapAround": true }'>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2015/04/un-paseo-para-recordar-360x570.jpg" class=""> 
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2015/04/un-paseo-para-recordar-360x570.jpg" class=""> 
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2015/04/un-paseo-para-recordar-360x570.jpg" class=""> 
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2015/04/un-paseo-para-recordar-360x570.jpg" class=""> 
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2015/04/un-paseo-para-recordar-360x570.jpg" class=""> 
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2015/04/un-paseo-para-recordar-360x570.jpg" class=""> 
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2015/04/un-paseo-para-recordar-360x570.jpg" class=""> 
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2015/04/un-paseo-para-recordar-360x570.jpg" class=""> 
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2015/04/un-paseo-para-recordar-360x570.jpg" class=""> 
+                </div>
+            </div>
+    </div>
+    </div>
+    <br>
+    <div class="books-carousel-cont" id="pedidos">
+        <div class="books-carousel-header" >
+            <h4>Pedidos</h4>
+            <div class="medio"> </div>
+            <h5> <a href="">ver más <i class="fas fa-angle-right"></i></a> </h5>
+        </div>
+        <div class="books-carousel" data-flickity= '{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false, "groupCells": "85%", "wrapAround": true }'>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img">
+                    <a href="#"><img src="https://libol.ga/wp-content/uploads/2021/02/mientras-te-olvido-360x570.jpg" class=""> 
+</a>
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2021/02/mientras-te-olvido-360x570.jpg" class=""> 
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2021/02/mientras-te-olvido-360x570.jpg" class=""> 
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2021/02/mientras-te-olvido-360x570.jpg" class=""> 
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2021/02/mientras-te-olvido-360x570.jpg" class=""> 
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2021/02/mientras-te-olvido-360x570.jpg" class=""> 
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2021/02/mientras-te-olvido-360x570.jpg" class=""> 
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2021/02/mientras-te-olvido-360x570.jpg" class=""> 
+                </div>
+            </div>
+            <div class="carousel-books-cell">
+                <div class="carousel-book_img"> 
+                    <img src="https://libol.ga/wp-content/uploads/2021/02/mientras-te-olvido-360x570.jpg" class=""> 
+                </div>
+            </div>
+    </div>
+    </div>
+    
+    <br>
+    <div class="books-card" id="categorias">
+        <a href="/categorias/Romance.html" style="text-decoration: none;">
+            <div class="books-card-cont" style="height: 100px; margin: 10px 9px;">
+            <div class="book_card_img" style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: aqua; */
+            transform: translateY(0px); 
+        "> 
+                <span style="
+                color: #fff;
+                font-size: 2em;
+                display: flex;
+                background: #6fc3f6;
+                padding: 15px;
+                border-radius: 20px;
+                "><ion-icon name="checkmark-outline"></ion-icon></span>
+            </div>
+            <div class="book_card_contents" style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        ">
+                <h2>Romance</h2>
+                <p>Los mejores libros romanticos para leer</p>
+            </div>
+        </div>
+        </a>
+        
+    </div>
+    <div class="books-card" id="categorias">
+        <a href="go:Fantasía" style="text-decoration: none;">
+            <div class="books-card-cont" style="height: 100px; margin: 10px 9px;">
+            <div class="book_card_img" style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: aqua; */
+            transform: translateY(0px); 
+        "> 
+                <span style="
+                color: #fff;
+                font-size: 2em;
+                display: flex;
+                background: #6fc3f6;
+                padding: 15px;
+                border-radius: 20px;
+                "><ion-icon name="checkmark-outline"></ion-icon></span>
+            </div>
+            <div class="book_card_contents" style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        ">
+                <h2>Erótico</h2>
+                <p>Los mejores libros de eróticos para leer</p>
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="books-card" id="categorias">
+        <a href="/categorias/Romance.html" style="text-decoration: none;">
+            <div class="books-card-cont" style="height: 100px; margin: 10px 9px;">
+            <div class="book_card_img" style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: aqua; */
+            transform: translateY(0px); 
+        "> 
+                <span style="
+                color: #fff;
+                font-size: 2em;
+                display: flex;
+                background: #6fc3f6;
+                padding: 15px;
+                border-radius: 20px;
+                "><ion-icon name="checkmark-outline"></ion-icon></span>
+            </div>
+            <div class="book_card_contents" style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        ">
+                <h2>Terror</h2>
+                <p>Los mejores libros de terror y misterio para leer</p>
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="books-card" id="categorias">
+        <a href="/categorias/Romance.html" style="text-decoration: none;">
+            <div class="books-card-cont" style="height: 100px; margin: 10px 9px;">
+            <div class="book_card_img" style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: aqua; */
+            transform: translateY(0px); 
+        "> 
+                <span style="
+                color: #fff;
+                font-size: 2em;
+                display: flex;
+                background: #6fc3f6;
+                padding: 15px;
+                border-radius: 20px;
+                "><ion-icon name="checkmark-outline"></ion-icon></span>
+            </div>
+            <div class="book_card_contents" style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        ">
+                <h2>Ficción</h2>
+                <p>Los mejores libros de ficción y fantasía para leer</p>
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="books-card" id="categorias">
+        <a href="/categorias/Romance.html" style="text-decoration: none;">
+            <div class="books-card-cont" style="height: 100px; margin: 10px 9px;">
+            <div class="book_card_img" style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: aqua; */
+            transform: translateY(0px); 
+        "> 
+                <span style="
+                color: #fff;
+                font-size: 2em;
+                display: flex;
+                background: #6fc3f6;
+                padding: 15px;
+                border-radius: 20px;
+                "><ion-icon name="checkmark-outline"></ion-icon></span>
+            </div>
+            <div class="book_card_contents" style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        ">
+                <h2>Variados</h2>
+                <p>Gran cantidad de libros variados para leer</p>
+            </div>
+        </div>
+        </a>
+    </div>
+    <br>
+
+
+    <footer>
+        <div>
+            <div class="animate__animated animate__slideInUp" style="animation-duration: 1.2s;"> 
+                <ul>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon_nav"> <ion-icon name="information-outline"></ion-icon> </span>
+                            <br>
+                            <!--  DMCA  -->
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon_nav"> <ion-icon name="musical-notes-outline"></ion-icon> </span>
+                            <!--  musica  -->
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon_nav"> <ion-icon name="home-outline"></ion-icon> </span>
+                            <!--  home  -->
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="http://action_offices">
+                            <span class="icon_nav"> <ion-icon name="chatbubble-outline"></ion-icon> </span>
+                            <!--  pedir  -->
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#categorias">
+                            <span class="icon_nav"> <ion-icon name="grid-outline"></ion-icon> </span>
+                            <!--  Categorias  -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
