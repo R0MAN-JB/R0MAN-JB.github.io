@@ -5,26 +5,48 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: 1.5s ease all;
 }
 
+:root {
+    --background-fff: url(https://i.ibb.co/8bVfLW0/fff.png);
+    --background-white: url(https://i.ibb.co/wg0hdVw/f1f9ffff.png);
+    --background-dark: url(https://i.ibb.co/zJGjgx0/171717ff.png);
+    --background-dark-2: url(https://i.ibb.co/b2SKTGJ/11b1b1bff.png);
+}
 
 body {
     margin-bottom: 55px;
     margin-top: 65px;
     font-family: 'Poppins', Helvetica, sans-serif;
-    background-color: #F1F8FF;
+    background-image: var(--background-white);
 }
+body.dark {
+    background-image: var(--background-dark);
+}
+
 header {
     top: 0;
     position: fixed;
     width: 100%;
-    background-color: #F1F8FF;
-    box-shadow: -6px 6px 15px 0px #75798fb7;
+    background-image: var(--background-fff);
+    box-shadow: -6px 6px 15px 0px #1a1b1d59;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 35px;
     z-index: 100;
+    transition: 1s ease all;
+}
+body.dark header {
+    background-image: var(--background-dark);
+    box-shadow: -6px 6px 15px 0px #101011cb;
+}
+body.dark header div{
+    color: white;
+}
+body.dark header div a{
+    color: white;
 }
 header div {
     width: 100%;
@@ -32,18 +54,62 @@ header div {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s ease all;
 }
 header div div {
+    color: #383838;
     display: flex;
     flex-grow: 1;
 }
 header div a {
     text-decoration: none;
     transform: translateY(3px);
-    color: black;
+    color: #383838;
     font-size: 1.3em;
+    transition: 0.5s ease all;
 }
 
+.btndark {
+    background-color: #383838;
+    border-radius: 1000px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    outline: none;
+    border: none;
+}
+.btndark::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    position: absolute;
+    background-color: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    transition: 3s ease all;
+    box-shadow: 0px 0px 2px 2px #35393d71;
+}
+.btndark.active {
+    background-color: #6fc3f6;
+    color: black;
+}
+.btndark.active::after {
+    right: 0;
+    left: unset;
+    transition: 3s ease all;
+}
+
+.btndark span {
+    width: 20px;
+    height: 20px;
+    line-height: 25px;
+    display: block;
+    background: none;
+    color: #fff;
+}
 
 .books-card {
     position: relative;
@@ -56,11 +122,27 @@ header div a {
     display: flex;
     width: 95%;
     height: 190px;
-    background-color: #fff;
+    background-image: var(--background-fff);
     border-radius: 15px;
-    box-shadow: -2px 6px 19px 0px #8b8d9b70;
+    box-shadow: -2px 6px 19px 0px #1a1b1d59;
 }
-
+body.dark .books-card-cont {
+    background-image: var(--background-dark-2);
+    transition: 1.5s ease all;
+    color: white;
+}
+body.dark .book_card_contents h2 {
+    transition: 1.5s ease all;
+    color: white;
+}
+body.dark .book_card_contents h4 {
+    transition: 1.5s ease all;
+    color: white;
+}
+body.dark .book_card_contents p {
+    transition: 1.5s ease all;
+    color: white;
+}
 .book_card_img {
     transform: translateY(-30px);
     flex-shrink: 0;
@@ -72,7 +154,7 @@ header div a {
     border-radius: 5px;
     flex-shrink: 0;
     width: 120px;
-    box-shadow: -2px 6px 19px 0px #7f818e;
+    box-shadow: -2px 6px 19px 0px #1a1b1d8a;
 }
 
 .book_card_contents {
@@ -145,7 +227,8 @@ footer div {
 }
 
 footer div div {
-    background: #fff; 
+    /* background: #fff;  */
+    background-image: var(--background-fff);
     bottom: 0;
     margin-bottom: 20px;
     box-shadow: -6px 6px 15px 0px #75798fb7; 
@@ -156,6 +239,14 @@ footer div div {
     justify-content: center; 
     align-items: center;
     /* letter-spacing: 0.05em;  */
+}
+body.dark footer div div {
+    background-image: var(--background-dark);
+    box-shadow: -6px 6px 15px 0px #101011cb;
+
+}
+body.dark .icon_nav {
+    color: #fff;
 }
 
 footer div div ul {
@@ -193,3 +284,12 @@ footer div div ul li a .icon_nav {
     transform: translateY(18px);
     transition: 0.5s; 
 }*/
+/* 
+.box{
+    background: url('https://media.timeout.com/images/103444978/image.jpg') repeat;
+    color:#21537a;
+    -webkit-text-fill-color: transparent;
+    background-size:cover;
+    -webkit-background-clip:text;
+    
+  } */
